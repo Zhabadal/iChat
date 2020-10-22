@@ -25,6 +25,12 @@ class AuthViewController: UIViewController {
         view.backgroundColor = .white
         setupConstraints()
     }
+
+}
+
+// MARK: - Setup Constraints
+
+extension AuthViewController {
     
     private func setupConstraints() {
         // Logo
@@ -53,7 +59,7 @@ class AuthViewController: UIViewController {
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
         ])
     }
-
+    
 }
 
 // MARK: - SwiftUI
