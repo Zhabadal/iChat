@@ -7,20 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE068E3F2540E0C300F20AFE /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE068E3E2540E0C300F20AFE /* UIButton + Extension.swift */; };
+		EE3879892541B47700985075 /* ButtonFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3879882541B47700985075 /* ButtonFormView.swift */; };
+		EE38798D2541B87E00985075 /* UIStackView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE38798C2541B87E00985075 /* UIStackView + Extension.swift */; };
+		EEB4C9512540E33500863816 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB4C9502540E33500863816 /* UIFont + Extension.swift */; };
+		EEB4C9542540E40C00863816 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB4C9532540E40C00863816 /* UIColor + Extension.swift */; };
+		EEB4C9572540E66C00863816 /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB4C9562540E66C00863816 /* UILabel + Extension.swift */; };
+		EEB4C95A2540E74B00863816 /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB4C9592540E74B00863816 /* UIImageView + Extension.swift */; };
 		EEEEE61D2540AD8200A8D4D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEEE61C2540AD8200A8D4D2 /* AppDelegate.swift */; };
 		EEEEE61F2540AD8200A8D4D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEEE61E2540AD8200A8D4D2 /* SceneDelegate.swift */; };
-		EEEEE6212540AD8200A8D4D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEEE6202540AD8200A8D4D2 /* ViewController.swift */; };
-		EEEEE6242540AD8200A8D4D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEEEE6222540AD8200A8D4D2 /* Main.storyboard */; };
+		EEEEE6212540AD8200A8D4D2 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEEE6202540AD8200A8D4D2 /* AuthViewController.swift */; };
 		EEEEE6262540AD8500A8D4D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEEEE6252540AD8500A8D4D2 /* Assets.xcassets */; };
 		EEEEE6292540AD8500A8D4D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEEEE6272540AD8500A8D4D2 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE068E3E2540E0C300F20AFE /* UIButton + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
+		EE3879882541B47700985075 /* ButtonFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFormView.swift; sourceTree = "<group>"; };
+		EE38798C2541B87E00985075 /* UIStackView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView + Extension.swift"; sourceTree = "<group>"; };
+		EEB4C9502540E33500863816 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
+		EEB4C9532540E40C00863816 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		EEB4C9562540E66C00863816 /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
+		EEB4C9592540E74B00863816 /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
 		EEEEE6192540AD8200A8D4D2 /* iChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEEEE61C2540AD8200A8D4D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEEEE61E2540AD8200A8D4D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EEEEE6202540AD8200A8D4D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EEEEE6232540AD8200A8D4D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEEEE6202540AD8200A8D4D2 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		EEEEE6252540AD8500A8D4D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEEEE6282540AD8500A8D4D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEEEE62A2540AD8500A8D4D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +49,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EEB4C95C2541B30800863816 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				EEB4C95E2541B31000863816 /* Extensions */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		EEB4C95E2541B31000863816 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EEB4C9592540E74B00863816 /* UIImageView + Extension.swift */,
+				EEB4C9562540E66C00863816 /* UILabel + Extension.swift */,
+				EEB4C9532540E40C00863816 /* UIColor + Extension.swift */,
+				EEB4C9502540E33500863816 /* UIFont + Extension.swift */,
+				EE068E3E2540E0C300F20AFE /* UIButton + Extension.swift */,
+				EE38798C2541B87E00985075 /* UIStackView + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		EEEEE6102540AD8200A8D4D2 = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +91,9 @@
 			children = (
 				EEEEE61C2540AD8200A8D4D2 /* AppDelegate.swift */,
 				EEEEE61E2540AD8200A8D4D2 /* SceneDelegate.swift */,
-				EEEEE6202540AD8200A8D4D2 /* ViewController.swift */,
-				EEEEE6222540AD8200A8D4D2 /* Main.storyboard */,
+				EEEEE6202540AD8200A8D4D2 /* AuthViewController.swift */,
+				EE3879882541B47700985075 /* ButtonFormView.swift */,
+				EEB4C95C2541B30800863816 /* UIKit */,
 				EEEEE6252540AD8500A8D4D2 /* Assets.xcassets */,
 				EEEEE6272540AD8500A8D4D2 /* LaunchScreen.storyboard */,
 				EEEEE62A2540AD8500A8D4D2 /* Info.plist */,
@@ -126,7 +160,6 @@
 			files = (
 				EEEEE6292540AD8500A8D4D2 /* LaunchScreen.storyboard in Resources */,
 				EEEEE6262540AD8500A8D4D2 /* Assets.xcassets in Resources */,
-				EEEEE6242540AD8200A8D4D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +170,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEEEE6212540AD8200A8D4D2 /* ViewController.swift in Sources */,
+				EEB4C9512540E33500863816 /* UIFont + Extension.swift in Sources */,
+				EEEEE6212540AD8200A8D4D2 /* AuthViewController.swift in Sources */,
 				EEEEE61D2540AD8200A8D4D2 /* AppDelegate.swift in Sources */,
+				EE38798D2541B87E00985075 /* UIStackView + Extension.swift in Sources */,
+				EEB4C9572540E66C00863816 /* UILabel + Extension.swift in Sources */,
+				EE3879892541B47700985075 /* ButtonFormView.swift in Sources */,
+				EEB4C95A2540E74B00863816 /* UIImageView + Extension.swift in Sources */,
+				EEB4C9542540E40C00863816 /* UIColor + Extension.swift in Sources */,
 				EEEEE61F2540AD8200A8D4D2 /* SceneDelegate.swift in Sources */,
+				EE068E3F2540E0C300F20AFE /* UIButton + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EEEEE6222540AD8200A8D4D2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EEEEE6232540AD8200A8D4D2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EEEEE6272540AD8500A8D4D2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
