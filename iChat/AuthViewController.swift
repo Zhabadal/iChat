@@ -22,6 +22,7 @@ class AuthViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        googleButton.customGoogleButton()
         view.backgroundColor = .white
         setupConstraints()
     }
@@ -54,7 +55,7 @@ extension AuthViewController {
         view.addSubview(stackView)
         
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 160),
+            stackView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 100),
             stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40)
         ])
@@ -67,22 +68,15 @@ extension AuthViewController {
 import SwiftUI
 
 struct AuthViewControllerProvider: PreviewProvider {
-    
     static var previews: some View {
         ContainerView().edgesIgnoringSafeArea(.all)
     }
     
     struct ContainerView: UIViewControllerRepresentable {
-        
         let authViewController = AuthViewController()
-        
         func makeUIViewController(context: Context) -> some UIViewController {
             return authViewController
         }
-        
-        func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-            
-        }
+        func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {}
     }
-    
 }
