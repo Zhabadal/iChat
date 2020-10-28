@@ -23,6 +23,7 @@
 		EE8EEBE225495B5800C3EF6D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EEBE125495B5800C3EF6D /* GradientView.swift */; };
 		EE8EEBE62549606F00C3EF6D /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EEBE52549606F00C3EF6D /* WaitingChatCell.swift */; };
 		EE8EEBEA254961A200C3EF6D /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EEBE9254961A200C3EF6D /* SelfConfiguringCell.swift */; };
+		EE8EEBEE254974A100C3EF6D /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EEBED254974A100C3EF6D /* SectionHeader.swift */; };
 		EEB4C9512540E33500863816 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB4C9502540E33500863816 /* UIFont + Extension.swift */; };
 		EEB4C9542540E40C00863816 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB4C9532540E40C00863816 /* UIColor + Extension.swift */; };
 		EEB4C9572540E66C00863816 /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB4C9562540E66C00863816 /* UILabel + Extension.swift */; };
@@ -54,6 +55,7 @@
 		EE8EEBE125495B5800C3EF6D /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		EE8EEBE52549606F00C3EF6D /* WaitingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatCell.swift; sourceTree = "<group>"; };
 		EE8EEBE9254961A200C3EF6D /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
+		EE8EEBED254974A100C3EF6D /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		EEB4C9502540E33500863816 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
 		EEB4C9532540E40C00863816 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 		EEB4C9562540E66C00863816 /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				EE8EEBC02546CFC000C3EF6D /* Cell */,
 				EEB6C7E52544AC5400085D62 /* MainTabBarController.swift */,
 				EEB6C7DF2544AA8600085D62 /* ListViewController.swift */,
+				EE8EEBED254974A100C3EF6D /* SectionHeader.swift */,
 				EEB6C7E92544AC9300085D62 /* PeopleViewController.swift */,
 			);
 			path = Controllers;
@@ -254,6 +257,7 @@
 			files = (
 				EEB6C7E02544AA8600085D62 /* ListViewController.swift in Sources */,
 				EE3879942541D3BF00985075 /* OneLineTextField.swift in Sources */,
+				EE8EEBEE254974A100C3EF6D /* SectionHeader.swift in Sources */,
 				EE8EEBE225495B5800C3EF6D /* GradientView.swift in Sources */,
 				EEB6C7E62544AC5400085D62 /* MainTabBarController.swift in Sources */,
 				EE3879902541D16B00985075 /* SignUpViewController.swift in Sources */,
