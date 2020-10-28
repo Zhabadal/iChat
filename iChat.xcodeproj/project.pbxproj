@@ -24,6 +24,11 @@
 		EE8EEBE62549606F00C3EF6D /* WaitingChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EEBE52549606F00C3EF6D /* WaitingChatCell.swift */; };
 		EE8EEBEA254961A200C3EF6D /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EEBE9254961A200C3EF6D /* SelfConfiguringCell.swift */; };
 		EE8EEBEE254974A100C3EF6D /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EEBED254974A100C3EF6D /* SectionHeader.swift */; };
+		EE8EEBF22549809900C3EF6D /* users.json in Resources */ = {isa = PBXBuildFile; fileRef = EE8EEBF12549809900C3EF6D /* users.json */; };
+		EE8EEBF62549817000C3EF6D /* MChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EEBF52549817000C3EF6D /* MChat.swift */; };
+		EE8EEBFB2549818E00C3EF6D /* MUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EEBFA2549818E00C3EF6D /* MUser.swift */; };
+		EE8EEC002549A7F400C3EF6D /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EEBFF2549A7F400C3EF6D /* UserCell.swift */; };
+		EE8EEC032549A96E00C3EF6D /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8EEC022549A96E00C3EF6D /* UIViewController + Extension.swift */; };
 		EEB4C9512540E33500863816 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB4C9502540E33500863816 /* UIFont + Extension.swift */; };
 		EEB4C9542540E40C00863816 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB4C9532540E40C00863816 /* UIColor + Extension.swift */; };
 		EEB4C9572540E66C00863816 /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB4C9562540E66C00863816 /* UILabel + Extension.swift */; };
@@ -56,6 +61,11 @@
 		EE8EEBE52549606F00C3EF6D /* WaitingChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatCell.swift; sourceTree = "<group>"; };
 		EE8EEBE9254961A200C3EF6D /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
 		EE8EEBED254974A100C3EF6D /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		EE8EEBF12549809900C3EF6D /* users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = users.json; sourceTree = "<group>"; };
+		EE8EEBF52549817000C3EF6D /* MChat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MChat.swift; sourceTree = "<group>"; };
+		EE8EEBFA2549818E00C3EF6D /* MUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MUser.swift; sourceTree = "<group>"; };
+		EE8EEBFF2549A7F400C3EF6D /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		EE8EEC022549A96E00C3EF6D /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 		EEB4C9502540E33500863816 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
 		EEB4C9532540E40C00863816 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 		EEB4C9562540E66C00863816 /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
@@ -88,6 +98,7 @@
 			children = (
 				EE8EEBC12546CFDA00C3EF6D /* ActiveChatCell.swift */,
 				EE8EEBE52549606F00C3EF6D /* WaitingChatCell.swift */,
+				EE8EEBFF2549A7F400C3EF6D /* UserCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -98,6 +109,23 @@
 				EE8EEBE9254961A200C3EF6D /* SelfConfiguringCell.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EE8EEBF02549804100C3EF6D /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				EE8EEBED254974A100C3EF6D /* SectionHeader.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		EE8EEBFD254981CE00C3EF6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE8EEBF52549817000C3EF6D /* MChat.swift */,
+				EE8EEBFA2549818E00C3EF6D /* MUser.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EEB4C95C2541B30800863816 /* Extensions */ = {
@@ -123,8 +151,7 @@
 				EE068E3E2540E0C300F20AFE /* UIButton + Extension.swift */,
 				EE38798C2541B87E00985075 /* UIStackView + Extension.swift */,
 				EE68641C2543761F00550130 /* UISegmentedControl + Extensions.swift */,
-				EE8EEBB82546C3FA00C3EF6D /* activeChats.json */,
-				EE8EEBB72546C3FA00C3EF6D /* waitingChats.json */,
+				EE8EEC022549A96E00C3EF6D /* UIViewController + Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -144,9 +171,9 @@
 			isa = PBXGroup;
 			children = (
 				EE8EEBC02546CFC000C3EF6D /* Cell */,
+				EE8EEBF02549804100C3EF6D /* Header */,
 				EEB6C7E52544AC5400085D62 /* MainTabBarController.swift */,
 				EEB6C7DF2544AA8600085D62 /* ListViewController.swift */,
-				EE8EEBED254974A100C3EF6D /* SectionHeader.swift */,
 				EEB6C7E92544AC9300085D62 /* PeopleViewController.swift */,
 			);
 			path = Controllers;
@@ -173,11 +200,15 @@
 			children = (
 				EEEEE61C2540AD8200A8D4D2 /* AppDelegate.swift */,
 				EEEEE61E2540AD8200A8D4D2 /* SceneDelegate.swift */,
+				EE8EEBFD254981CE00C3EF6D /* Model */,
 				EEB6C7E42544AC3A00085D62 /* Controllers */,
 				EEB6C7E22544AC1600085D62 /* SignIn&Auth */,
 				EE8EEBE82549618D00C3EF6D /* Protocols */,
 				EEB4C95C2541B30800863816 /* Extensions */,
 				EEEEE6252540AD8500A8D4D2 /* Assets.xcassets */,
+				EE8EEBB82546C3FA00C3EF6D /* activeChats.json */,
+				EE8EEBB72546C3FA00C3EF6D /* waitingChats.json */,
+				EE8EEBF12549809900C3EF6D /* users.json */,
 				EEEEE6272540AD8500A8D4D2 /* LaunchScreen.storyboard */,
 				EEEEE62A2540AD8500A8D4D2 /* Info.plist */,
 			);
@@ -241,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8EEBF22549809900C3EF6D /* users.json in Resources */,
 				EE8EEBB92546C3FA00C3EF6D /* waitingChats.json in Resources */,
 				EEEEE6292540AD8500A8D4D2 /* LaunchScreen.storyboard in Resources */,
 				EEEEE6262540AD8500A8D4D2 /* Assets.xcassets in Resources */,
@@ -268,16 +300,20 @@
 				EE8EEBBD2546C41D00C3EF6D /* Bundle-Decodable.swift in Sources */,
 				EE38799C2541FA3300985075 /* SetupProfileViewController.swift in Sources */,
 				EEEEE61D2540AD8200A8D4D2 /* AppDelegate.swift in Sources */,
+				EE8EEBFB2549818E00C3EF6D /* MUser.swift in Sources */,
 				EE68641D2543761F00550130 /* UISegmentedControl + Extensions.swift in Sources */,
 				EE38798D2541B87E00985075 /* UIStackView + Extension.swift in Sources */,
 				EE6864182541FD3100550130 /* AddPhotoView.swift in Sources */,
 				EEB4C9572540E66C00863816 /* UILabel + Extension.swift in Sources */,
 				EE3879892541B47700985075 /* ButtonFormView.swift in Sources */,
 				EE8EEBEA254961A200C3EF6D /* SelfConfiguringCell.swift in Sources */,
+				EE8EEC002549A7F400C3EF6D /* UserCell.swift in Sources */,
+				EE8EEC032549A96E00C3EF6D /* UIViewController + Extension.swift in Sources */,
 				EE8EEBE62549606F00C3EF6D /* WaitingChatCell.swift in Sources */,
 				EEB4C95A2540E74B00863816 /* UIImageView + Extension.swift in Sources */,
 				EEB4C9542540E40C00863816 /* UIColor + Extension.swift in Sources */,
 				EEEEE61F2540AD8200A8D4D2 /* SceneDelegate.swift in Sources */,
+				EE8EEBF62549817000C3EF6D /* MChat.swift in Sources */,
 				EE3879992541E32E00985075 /* LoginViewController.swift in Sources */,
 				EE068E3F2540E0C300F20AFE /* UIButton + Extension.swift in Sources */,
 			);
