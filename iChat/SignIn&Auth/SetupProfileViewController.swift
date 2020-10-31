@@ -54,6 +54,8 @@ class SetupProfileViewController: UIViewController {
         setupConstraints()
         
         goToChatsButton.addTarget(self, action: #selector(goChatsButtonTapped), for: .touchUpInside)
+        
+        fullImageView.plusButton.addTarget(self, action: #selector(plusButtonTapped), for: .touchUpInside)
     }
     
     // MARK: - Methods
@@ -64,7 +66,7 @@ class SetupProfileViewController: UIViewController {
             id: currentUser.uid,
             email: currentUser.email!,
             username: fullNameTextField.text,
-            avatarImageString: nil,
+            avatarImage: fullImageView.circleImageView.image,
             description: aboutMeTextField.text,
             sex: sexSegmentedControl.titleForSegment(at: sexSegmentedControl.selectedSegmentIndex)) { (result) in
             
@@ -80,6 +82,29 @@ class SetupProfileViewController: UIViewController {
                 self.showAlert(with: "Error!", and: error.localizedDescription)
             }
         }
+        
+    }
+    
+    @objc private func plusButtonTapped() {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.sourceType = .photoLibrary
+        present(imagePickerController, animated: true)
+    }
+    
+}
+
+// MARK: - UIImagePickerControllerDelegate
+
+extension SetupProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        picker.dismiss(animated: true)
+        
+        guard let image = info[.originalImage] as? UIImage else { return }
+        
+        fullImageView.circleImageView.image = image
         
     }
     
