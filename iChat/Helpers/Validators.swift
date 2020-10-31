@@ -19,6 +19,16 @@ class Validators {
         return true
     }
     
+    static func isFilled(username: String?, description: String?, sex: String?) -> Bool {
+        guard let username = username, username != "",
+              let description = description, description != "",
+              let sex = sex, sex != "" else {
+            return false
+        }
+        
+        return true
+    }
+    
     static func isSimpleEmail(_ email: String) -> Bool {
         let emailRegEx = "^.+@.+\\..{2,}$"
         return check(text: email, regEx: emailRegEx)
