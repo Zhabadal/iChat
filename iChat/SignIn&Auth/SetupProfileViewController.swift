@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import SDWebImage
 
 class SetupProfileViewController: UIViewController {
     
@@ -38,7 +39,9 @@ class SetupProfileViewController: UIViewController {
             fullNameTextField.text = username
         }
         
-        // TODO set google image
+        if let photoURL = currentUser.photoURL {
+            fullImageView.circleImageView.sd_setImage(with: photoURL)
+        }
     }
     
     required init?(coder: NSCoder) {
@@ -71,15 +74,15 @@ class SetupProfileViewController: UIViewController {
             sex: sexSegmentedControl.titleForSegment(at: sexSegmentedControl.selectedSegmentIndex)) { (result) in
             
             switch result {
-            case .success(let mUser):
+            case .success(let muser):
                 self.showAlert(with: "Success!", and: "Данные сохранены!") {
-                    let mainTabBar = MainTabBarController(currentUser: mUser)
+                    let mainTabBar = MainTabBarController(currentUser: muser)
                     mainTabBar.modalPresentationStyle = .fullScreen
                     self.present(mainTabBar, animated: true)
                 }
                 
             case .failure(let error):
-                self.showAlert(with: "Error!", and: error.localizedDescription)
+                self.showAlert(with: "Ошибка!", and: error.localizedDescription)
             }
         }
         

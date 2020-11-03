@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class WaitingChatCell: UICollectionViewCell, SelfConfiguringCell {
     
@@ -24,10 +25,11 @@ class WaitingChatCell: UICollectionViewCell, SelfConfiguringCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-        
+    
     func configure<U>(with value: U) where U : Hashable {
         guard let chat = value as? MChat else { return }
-        friendImageView.image = UIImage(named: chat.userImageString)
+        guard let url = URL(string: chat.friendAvatarStringURL) else { return }
+        friendImageView.sd_setImage(with: url)
     }
     
     private func setupConstraints() {

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class UserCell: UICollectionViewCell, SelfConfiguringCell {
     
@@ -31,6 +32,11 @@ class UserCell: UICollectionViewCell, SelfConfiguringCell {
         super.layoutSubviews()
         containerView.layer.cornerRadius = 4
         containerView.clipsToBounds = true
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        userImageView.image = nil
     }
     
     private func setupConstraints() {
@@ -68,8 +74,9 @@ class UserCell: UICollectionViewCell, SelfConfiguringCell {
     
     func configure<U>(with value: U) where U : Hashable {
         guard let user = value as? MUser else { return }
-        userImageView.image = UIImage(named: user.avatarStringURL)
         userName.text = user.username
+        guard let url = URL(string: user.avatarStringURL) else { return }
+        userImageView.sd_setImage(with: url)
     }
     
     required init?(coder: NSCoder) {

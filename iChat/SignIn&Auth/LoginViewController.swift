@@ -53,11 +53,11 @@ class LoginViewController: UIViewController {
         AuthService.shared.login(email: emailTextField.text, password: passwordTextField.text) { (result) in
             switch result {
             case .success(let user):
-                self.showAlert(with: "Success", and: "You are authtorized!") {
+                self.showAlert(with: "Успешно!", and: "Вы авторизированы") {
                     FirestoreService.shared.getUserData(user: user) { (result) in
                         switch result {
-                        case .success(let mUser):
-                            let mainTabBar = MainTabBarController(currentUser: mUser)
+                        case .success(let muser):
+                            let mainTabBar = MainTabBarController(currentUser: muser)
                             mainTabBar.modalPresentationStyle = .fullScreen
                             self.present(mainTabBar, animated: true)
                         case .failure(_):
@@ -68,7 +68,7 @@ class LoginViewController: UIViewController {
                     
                 }
             case .failure(let error):
-                self.showAlert(with: "Failure", and: error.localizedDescription)
+                self.showAlert(with: "Ошибка!", and: error.localizedDescription)
             }
         }
     }

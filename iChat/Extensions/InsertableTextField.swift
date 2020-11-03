@@ -64,23 +64,3 @@ class InsertableTextField: UITextField {
     }
     
 }
-
-// MARK: - SwiftUI
-
-import SwiftUI
-
-struct TextFieldProvider: PreviewProvider {
-    static var previews: some View {
-        ContainerView().edgesIgnoringSafeArea(.all)
-    }
-    
-    struct ContainerView: UIViewControllerRepresentable {
-        let profileViewController = ProfileViewController()
-        
-        func makeUIViewController(context: Context) -> some UIViewController {
-            return profileViewController
-        }
-        
-        func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {}
-    }
-}

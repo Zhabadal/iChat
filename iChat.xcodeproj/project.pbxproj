@@ -44,6 +44,9 @@
 		EEAB205C254D7E36004FD705 /* UIApplication + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB205B254D7E36004FD705 /* UIApplication + Extension.swift */; };
 		EEAB2078254DF235004FD705 /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB2077254DF235004FD705 /* StorageService.swift */; };
 		EEAB207B254DF482004FD705 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB207A254DF482004FD705 /* UIImage+Extension.swift */; };
+		EEAB207E254ED1A5004FD705 /* ListenerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB207D254ED1A4004FD705 /* ListenerService.swift */; };
+		EEAB209B254F0A46004FD705 /* MMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB209A254F0A45004FD705 /* MMessage.swift */; };
+		EEAB21112551624B004FD705 /* WaitingChatsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB21102551624A004FD705 /* WaitingChatsNavigation.swift */; };
 		EEB4C9512540E33500863816 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB4C9502540E33500863816 /* UIFont + Extension.swift */; };
 		EEB4C9542540E40C00863816 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB4C9532540E40C00863816 /* UIColor + Extension.swift */; };
 		EEB4C9572540E66C00863816 /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB4C9562540E66C00863816 /* UILabel + Extension.swift */; };
@@ -98,6 +101,9 @@
 		EEAB205B254D7E36004FD705 /* UIApplication + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + Extension.swift"; sourceTree = "<group>"; };
 		EEAB2077254DF235004FD705 /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
 		EEAB207A254DF482004FD705 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		EEAB207D254ED1A4004FD705 /* ListenerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerService.swift; sourceTree = "<group>"; };
+		EEAB209A254F0A45004FD705 /* MMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMessage.swift; sourceTree = "<group>"; };
+		EEAB21102551624A004FD705 /* WaitingChatsNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatsNavigation.swift; sourceTree = "<group>"; };
 		EEB4C9502540E33500863816 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
 		EEB4C9532540E40C00863816 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 		EEB4C9562540E66C00863816 /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
@@ -150,6 +156,7 @@
 				EE216BC6254AB4B600361DA8 /* AuthService.swift */,
 				EEAB2027254C6315004FD705 /* FirestoreService.swift */,
 				EEAB2077254DF235004FD705 /* StorageService.swift */,
+				EEAB207D254ED1A4004FD705 /* ListenerService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -179,6 +186,7 @@
 			children = (
 				EE8EEBE9254961A200C3EF6D /* SelfConfiguringCell.swift */,
 				EEAB2024254AFAB2004FD705 /* AuthNavigatingDelegate.swift */,
+				EEAB21102551624A004FD705 /* WaitingChatsNavigation.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -196,6 +204,7 @@
 			children = (
 				EE8EEBF52549817000C3EF6D /* MChat.swift */,
 				EE8EEBFA2549818E00C3EF6D /* MUser.swift */,
+				EEAB209A254F0A45004FD705 /* MMessage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -453,6 +462,7 @@
 				EE8EEC06254A038F00C3EF6D /* ProfileViewController.swift in Sources */,
 				EEEEE61D2540AD8200A8D4D2 /* AppDelegate.swift in Sources */,
 				EE8EEC10254A143700C3EF6D /* ChatRequestViewController.swift in Sources */,
+				EEAB207E254ED1A5004FD705 /* ListenerService.swift in Sources */,
 				EE8EEBFB2549818E00C3EF6D /* MUser.swift in Sources */,
 				EE68641D2543761F00550130 /* UISegmentedControl + Extensions.swift in Sources */,
 				EE38798D2541B87E00985075 /* UIStackView + Extension.swift in Sources */,
@@ -470,9 +480,11 @@
 				EEB4C95A2540E74B00863816 /* UIImageView + Extension.swift in Sources */,
 				EEB4C9542540E40C00863816 /* UIColor + Extension.swift in Sources */,
 				EEEEE61F2540AD8200A8D4D2 /* SceneDelegate.swift in Sources */,
+				EEAB209B254F0A46004FD705 /* MMessage.swift in Sources */,
 				EE8EEBF62549817000C3EF6D /* MChat.swift in Sources */,
 				EE216BC7254AB4B600361DA8 /* AuthService.swift in Sources */,
 				EE3879992541E32E00985075 /* LoginViewController.swift in Sources */,
+				EEAB21112551624B004FD705 /* WaitingChatsNavigation.swift in Sources */,
 				EE068E3F2540E0C300F20AFE /* UIButton + Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
