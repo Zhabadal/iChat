@@ -24,12 +24,12 @@ class ActiveChatCell: UICollectionViewCell, SelfConfiguringCell {
         layer.cornerRadius = 4
         clipsToBounds = true
     }
-        
+    
     func configure<U>(with value: U) where U : Hashable {
         guard let chat = value as? MChat else { return }
-//        friendImageView.image = UIImage(named: chat.userImageString)
-//        friendName.text = chat.username
-//        lastMessage.text = chat.lastMessage
+        friendName.text = chat.friendUsername
+        lastMessage.text = chat.lastMessageContent
+        friendImageView.sd_setImage(with: URL(string: chat.friendAvatarStringURL))
     }
     
     required init?(coder: NSCoder) {
