@@ -47,6 +47,8 @@
 		EEAB207E254ED1A5004FD705 /* ListenerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB207D254ED1A4004FD705 /* ListenerService.swift */; };
 		EEAB209B254F0A46004FD705 /* MMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB209A254F0A45004FD705 /* MMessage.swift */; };
 		EEAB21112551624B004FD705 /* WaitingChatsNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB21102551624A004FD705 /* WaitingChatsNavigation.swift */; };
+		EEAB21302552B7B2004FD705 /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB212F2552B7B2004FD705 /* ChatsViewController.swift */; };
+		EEAB21622553155B004FD705 /* MSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAB21612553155B004FD705 /* MSender.swift */; };
 		EEB4C9512540E33500863816 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB4C9502540E33500863816 /* UIFont + Extension.swift */; };
 		EEB4C9542540E40C00863816 /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB4C9532540E40C00863816 /* UIColor + Extension.swift */; };
 		EEB4C9572540E66C00863816 /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB4C9562540E66C00863816 /* UILabel + Extension.swift */; };
@@ -104,6 +106,8 @@
 		EEAB207D254ED1A4004FD705 /* ListenerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerService.swift; sourceTree = "<group>"; };
 		EEAB209A254F0A45004FD705 /* MMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMessage.swift; sourceTree = "<group>"; };
 		EEAB21102551624A004FD705 /* WaitingChatsNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingChatsNavigation.swift; sourceTree = "<group>"; };
+		EEAB212F2552B7B2004FD705 /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		EEAB21612553155B004FD705 /* MSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSender.swift; sourceTree = "<group>"; };
 		EEB4C9502540E33500863816 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
 		EEB4C9532540E40C00863816 /* UIColor + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
 		EEB4C9562540E66C00863816 /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
@@ -205,6 +209,7 @@
 				EE8EEBF52549817000C3EF6D /* MChat.swift */,
 				EE8EEBFA2549818E00C3EF6D /* MUser.swift */,
 				EEAB209A254F0A45004FD705 /* MMessage.swift */,
+				EEAB21612553155B004FD705 /* MSender.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				EEB6C7E92544AC9300085D62 /* PeopleViewController.swift */,
 				EE8EEC05254A038F00C3EF6D /* ProfileViewController.swift */,
 				EE8EEC0F254A143700C3EF6D /* ChatRequestViewController.swift */,
+				EEAB212F2552B7B2004FD705 /* ChatsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -446,6 +452,7 @@
 				EE8EEBEE254974A100C3EF6D /* SectionHeader.swift in Sources */,
 				EE8EEBE225495B5800C3EF6D /* GradientView.swift in Sources */,
 				EEAB205C254D7E36004FD705 /* UIApplication + Extension.swift in Sources */,
+				EEAB21622553155B004FD705 /* MSender.swift in Sources */,
 				EEB6C7E62544AC5400085D62 /* MainTabBarController.swift in Sources */,
 				EE3879902541D16B00985075 /* SignUpViewController.swift in Sources */,
 				EE216BCE254AC1F100361DA8 /* AuthError.swift in Sources */,
@@ -469,6 +476,7 @@
 				EE6864182541FD3100550130 /* AddPhotoView.swift in Sources */,
 				EEAB2040254C6AE7004FD705 /* UserError.swift in Sources */,
 				EEB4C9572540E66C00863816 /* UILabel + Extension.swift in Sources */,
+				EEAB21302552B7B2004FD705 /* ChatsViewController.swift in Sources */,
 				EE8EEC0D254A0C1200C3EF6D /* UIView + Extension.swift in Sources */,
 				EE3879892541B47700985075 /* ButtonFormView.swift in Sources */,
 				EEAB2078254DF235004FD705 /* StorageService.swift in Sources */,

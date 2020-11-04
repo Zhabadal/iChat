@@ -134,7 +134,6 @@ class ListViewController: UIViewController {
 // MARK: - Data Source
 
 extension ListViewController {
-    
     private func createDataSource() {
         dataSource = UICollectionViewDiffableDataSource<Section, MChat>(collectionView: collectionView, cellProvider: { (collectionView, indexPath, chat) -> UICollectionViewCell? in
             guard let section = Section(rawValue: indexPath.section) else {
@@ -163,13 +162,11 @@ extension ListViewController {
             return sectionHeader
         }
     }
-    
 }
 
 // MARK: - Setup layout
 
 extension ListViewController {
-    
     private func createCompositionalLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewCompositionalLayout { (sectionIndex, layoutEnvironment) -> NSCollectionLayoutSection? in
             
@@ -236,13 +233,11 @@ extension ListViewController {
         let sectionHeader = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: sectionHeaderSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
         return sectionHeader
     }
-    
 }
 
 // MARK: - UICollectionViewDelegate
 
 extension ListViewController: UICollectionViewDelegate {
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let chat = self.dataSource?.itemIdentifier(for: indexPath) else { return }
         guard let section = Section(rawValue: indexPath.section) else { return }
@@ -253,16 +248,15 @@ extension ListViewController: UICollectionViewDelegate {
             chatRequestVC.delegate = self
             present(chatRequestVC, animated: true)
         case .activeChats:
-            print(indexPath)
+            let chatsVC = ChatsViewController(user: currentUser, chat: chat)
+            navigationController?.pushViewController(chatsVC, animated: true)
         }
     }
-    
 }
 
 // MARK: - UISearchBarDelegate
 
 extension ListViewController: UISearchBarDelegate {
-    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print("\(searchText)")
     }
@@ -292,7 +286,6 @@ extension ListViewController: WaitingChatsNavigation {
             }
         }
     }
-    
 }
 
 // MARK: - SwiftUI
